@@ -5,17 +5,13 @@
 package vista;
 import Controlador.AutorControlador;
 import Controlador.LibroControlador;
-import java.util.Scanner;
 import modelo.Autor;
 import modelo.Libro;
 import java.util.Scanner;
-
 /**
  *
  * @author USER
  */
-import java.util.Scanner;
-
 public class main {
 
     public static void main(String[] args) {
@@ -30,7 +26,7 @@ public class main {
             while (true) {
                 try {
                     op1 = Integer.parseInt(es.nextLine());
-                    if (op1 >= 0 && op1 <= 3) { // Ajuste para incluir opción de agregar autor
+                    if (op1 >= 0 && op1 <= 3) {
                         break;
                     } else {
                         System.out.println("Opción no válida, por favor elija una opción entre 0 y 3.");
@@ -122,8 +118,7 @@ public class main {
                     System.out.println("Error al agregar el autor.");
                 }
 
-            } else if (op1 == 0) {
-                // Salir del menú
+                } else if (op1 == 0) {
                 System.out.println("Saliendo del menú...");
                 break;
             }
